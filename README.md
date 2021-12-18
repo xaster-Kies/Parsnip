@@ -1,4 +1,4 @@
-# Task-Manager
+# Parsnip
 **typeOfProject**  === [Frontend/Concept] <br />
 **Technologies:**  Javascript, React, Redux <br />
-**Description:**  Taking advantage of the redux architecture to better manage project tasks <br />
+**Description:**   Parsnip is web app that manages project tasks by taking advantage of the Redux architecture <br />
