@@ -1,2 +1,4 @@
 # Task-Manager
-Taking advantages of Redux architecture to better manage tasks
+**typeOfProject**  === [Frontend/Concept] <br />
+**Technologies:**  Javascript, React, Redux <br />
+**Description:**  Taking advantage of the redux architecture to better manage tasks <br />
