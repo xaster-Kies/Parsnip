@@ -1,8 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import { createStore } from 'redux'
 import App from './App';
+import tasks from './reducers'
 import reportWebVitals from './reportWebVitals';
+
+const store = createStore(tasks)
 
 ReactDOM.render(
   <React.StrictMode>
