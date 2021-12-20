@@ -1,23 +1,25 @@
-import logo from './logo.svg';
 import './App.css';
+import TaskPage from './components/TaskPage';
+
+const mockTasks = [
+  {
+    id: 1,
+    title: 'Learn Redux',
+    description: 'The store, actions, and reducers, oh my',
+    status: 'in Progress'
+  },
+  {
+    id: 2,
+    title: 'Peace on Earth',
+    description: 'No big deal',
+    status: 'in Progress'
+  }
+]
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='main-content'>
+      <TaskPage tasks={mockTasks}/>
     </div>
   );
 }
