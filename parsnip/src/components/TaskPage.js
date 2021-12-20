@@ -9,7 +9,7 @@ export default class TaskPage extends Component {
     renderTaskLists() {
        const { tasks } = this.props;
        return TASK_STATUSES.map(status => {
-           const statusTasks = tasks.filter(task => task.status === status);
+           const statusTasks = tas-ks.filter(task => task.status === status);
            return <TaskList key={status} status={status} tasks = {statusTasks} />
        })
    }
