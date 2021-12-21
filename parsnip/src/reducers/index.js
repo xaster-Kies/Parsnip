@@ -11,7 +11,7 @@ const mockTasks = [
       description: 'No big deal',
       status: 'in Progress'
     }
-  ]
+]
 
 export default function tasks(state = { tasks: mockTasks}, action) {
     return state

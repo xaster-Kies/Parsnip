@@ -4,6 +4,19 @@ import './App.css';
 import TaskPage from './components/TaskPage';
 
 class App extends Component {
+
+// Still digesting stuffs
+
+  onCreateTask = ({ title, description }) => {
+    this.props.dispatch({
+      type: 'CREATE_TASK',
+      payload: {
+        title,
+        description
+      }
+    })
+  }
+
   render() {
     console.log('Props from App: ', this.props)
     return (
