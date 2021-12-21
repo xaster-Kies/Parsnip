@@ -75,6 +75,9 @@ export default class TaskPage extends Component {
             </form>
           )}
         </div>
+        <div className="task-lists">
+            {this.renderTaskLists()}
+        </div>
       </div>
     )
   }
