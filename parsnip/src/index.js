@@ -5,9 +5,10 @@ import {createStore} from 'redux'
 import App from './App';
 import tasks from './reducers'
 import {Provider} from 'react-redux'
+import  { devToolsEnhancer } from 'redux-devtools-extension'
 import reportWebVitals from './reportWebVitals';
 
-const store = createStore(tasks)
+const store = createStore(tasks, devToolsEnhancer())
 
 ReactDOM.render(
   <Provider store={store}>
