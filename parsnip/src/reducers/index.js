@@ -20,5 +20,20 @@ export default function tasks(state = { tasks: mockTasks}, action) {
       return { tasks: state.tasks.concat(action.payload) };
     }
 
+    if (action.type === 'EDIT_TASK') {
+      const { payload } = action;
+      return {
+        task: state.tasks.map(task => {
+          if(task.id === payload.id) {
+            return Object.assign({}, task, payload.params);
+          }
+
+          return task
+        })
+
+        
+      }
+    }
+
     return state;
 }
