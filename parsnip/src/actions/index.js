@@ -16,4 +16,14 @@ export default function createTask({ title, description }) {
             status: 'Unstarted'
         }
     }
+};
+
+export function editTask(id, params = {}) {
+    return {
+        type: 'EDIT_TASK',
+        payload: {
+            id,
+            params
+        }
+    }
 }
