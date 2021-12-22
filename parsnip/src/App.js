@@ -1,20 +1,15 @@
 import {Component} from 'react';
 import {connect} from 'react-redux';
+import createTask from './actions';
 import './App.css';
 import TaskPage from './components/TaskPage';
 
+
 class App extends Component {
 
-// Still digesting stuffs
-
+  
   onCreateTask = ({ title, description }) => {
-    this.props.dispatch({
-      type: 'CREATE_TASK',
-      payload: {
-        title,
-        description
-      }
-    })
+    this.props.dispatch(createTask({ title, description}))
   }
 
   render() {

@@ -15,7 +15,7 @@ export default class TaskPage extends Component {
   }
 
   onTitleChange = (e) => {
-    this.setState({title: e.targe.value})
+    this.setState({title: e.target.value})
   }
 
   onDescriptionChange = (e) => {
