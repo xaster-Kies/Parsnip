@@ -63,13 +63,13 @@ export default class TaskPage extends Component {
                 type="text"
                 onChange={this.onTitleChange}
                 value={this.state.title}
-                className="ful-width-input"
+                className="full-width-input"
                 placeholder='Title'/>
               <input
                 type="text"
                 onChange={this.onDescriptionChange}
                 value={this.state.description}
-                className="ful-width-input"
+                className="full-width-input"
                 placeholder='Description'/>
               <button className="button" type='submit'>
                 Save
